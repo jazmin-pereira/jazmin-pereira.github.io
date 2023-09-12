@@ -1,9 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Impact:400,800');
 body{
     background: #f6f5f7; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Impact', sans-serif;
     color: #3E363F;
+    background-image:url(azul.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+   
+            /*linear-gradient(45deg,
+              #FF416C (245, 66, 170, 0.75),
+              rgba(29, 113, 197, 0.75)); */
 }
+
+#mensaje{
+    /*border: #0A81D1 2px solid;*/
+    background: #f6f5f7;
+    padding: 25px;
+}
+
 #contenedor{
     width: 900px;
     height: 500px;
@@ -14,8 +30,6 @@ body{
     margin: auto;
     border-radius: 10px;
     overflow: hidden; 
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-      0 10px 10px rgba(0,0,0,0.22);
 }
 #calculadora{
     background: white;
@@ -26,12 +40,16 @@ body{
 }
 
 #detalle{
-    background: #FF416C;
+    font-family: 'Monserrath', sans-serif;
+    background: #2cbfb8;
     /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
     width: 50%;
     height: 100%;
-    float: left;
+    float: right;
     color: #f6f5f7;
+    border-radius: 10px;
+        width: 50%;
+    height: 100%;
 }
 .contenido{
     /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
@@ -53,8 +71,8 @@ button {
       font-weight: bold;
       padding: 12px 45px;
       border-radius: 30px;
-      background-color: #FF416C;
-      border: 1px solid #FF416C;
+      background-color: #2cbfb8;
+      border: 1px solid #2cbfb8;
       color: #FFFFFF;
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -62,7 +80,7 @@ button {
   }
   button:active {
 	transform: scale(0.95);
-} 
+}
 #error{
     color: red;
     font-weight: bold;
@@ -70,9 +88,9 @@ button {
 }
 
 .resultado{
-    color: #0A81D1;
+    color: #000000;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 15px;
     margin-bottom: 5px;
     display: none;
 }
